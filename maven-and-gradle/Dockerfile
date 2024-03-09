@@ -18,4 +18,4 @@ RUN mkdir -p /opt/gradle &&\
 	cd .. &&\
 	rm -rf gradle*
 
-RUN PATH="$PATH:/opt/maven/bin:/opt/gradle/bin" && sed "s|PATH=.*|PATH=$PATH|g" /etc/environment > /etc/environment
+RUN PATH="$PATH:/opt/maven/bin:/opt/gradle/bin" && sed -i "s|PATH=.*|PATH=$PATH|g" /etc/environment
