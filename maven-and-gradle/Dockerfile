@@ -10,7 +10,7 @@ RUN mkdir -p /opt/maven &&\
 
 RUN mkdir -p /opt/gradle &&\
 	cd /opt/gradle &&\
-	curl https://services.gradle.org/distributions/gradle-8.6-bin.zip -o gradle.zip &&\
+	curl -L https://services.gradle.org/distributions/gradle-8.6-bin.zip -o gradle.zip &&\
 	unzip gradle.zip &&\
 	rm -rf gradle.zip &&\
 	cd gradle* &&\
