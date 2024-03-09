@@ -15,7 +15,7 @@ RUN mkdir -p /opt/gradle &&\
 	rm -rf gradle.zip &&\
 	cd gradle* &&\
 	mv * ../ &&\
-	cd ... &&\
+	cd .. &&\
 	rm -rf gradle*
 
 RUN PATH="$PATH:/opt/maven/bin:/opt/gradle/bin" && sed "s|PATH=.*|PATH=$PATH|g" /etc/environment > /etc/environment
